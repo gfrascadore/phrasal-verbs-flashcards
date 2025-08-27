@@ -1,0 +1,1172 @@
+[
+  {
+    "id": 1,
+    "verb": "account for",
+    "meaning": "spiegare / giustificare",
+    "example": "The report accounts for the missing money.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 2,
+    "verb": "act on",
+    "meaning": "agire in base a",
+    "example": "The police acted on the information they received.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 3,
+    "verb": "add up",
+    "meaning": "avere senso / tornare",
+    "example": "Her story doesn’t add up.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 4,
+    "verb": "back down",
+    "meaning": "ritirarsi / cedere",
+    "example": "He refused to back down from his position.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 5,
+    "verb": "back up",
+    "meaning": "sostenere / fare una copia",
+    "example": "Experts back up the theory with evidence.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 6,
+    "verb": "bear out",
+    "meaning": "confermare",
+    "example": "The facts bear out her story.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 7,
+    "verb": "blow up",
+    "meaning": "esplodere / arrabbiarsi",
+    "example": "The building blew up during the night.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 8,
+    "verb": "break down",
+    "meaning": "guastarsi / crollare emotivamente",
+    "example": "The car broke down on the way.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 9,
+    "verb": "break out",
+    "meaning": "scoppiare (guerra, incendio, epidemia)",
+    "example": "War broke out in the region.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 10,
+    "verb": "bring about",
+    "meaning": "causare",
+    "example": "The new law brought about many changes.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 11,
+    "verb": "bring up",
+    "meaning": "menzionare / crescere (figli)",
+    "example": "She brought up an important issue.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 12,
+    "verb": "call off",
+    "meaning": "annullare",
+    "example": "They called off the meeting.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 13,
+    "verb": "carry on",
+    "meaning": "continuare",
+    "example": "Please carry on with your work.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 14,
+    "verb": "carry out",
+    "meaning": "eseguire",
+    "example": "The scientists carried out an experiment.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 15,
+    "verb": "catch up",
+    "meaning": "raggiungere / mettersi in pari",
+    "example": "He caught up with his studies.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 16,
+    "verb": "check out",
+    "meaning": "controllare / dare un’occhiata",
+    "example": "You should check out this article.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 17,
+    "verb": "come across",
+    "meaning": "imbattersi in",
+    "example": "I came across an old friend yesterday.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 18,
+    "verb": "come up",
+    "meaning": "essere menzionato / sorgere",
+    "example": "The issue came up during the meeting.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 19,
+    "verb": "come up with",
+    "meaning": "trovare / proporre",
+    "example": "She came up with a good idea.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 20,
+    "verb": "cut off",
+    "meaning": "interrompere / isolare",
+    "example": "The village was cut off by the flood.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 21,
+    "verb": "deal with",
+    "meaning": "gestire / affrontare",
+    "example": "The article deals with climate change.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 22,
+    "verb": "draw up",
+    "meaning": "redigere",
+    "example": "The lawyer drew up the contract.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 23,
+    "verb": "drop out",
+    "meaning": "ritirarsi",
+    "example": "Many students dropped out of school.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 24,
+    "verb": "end up",
+    "meaning": "finire per",
+    "example": "He ended up in prison.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 25,
+    "verb": "figure out",
+    "meaning": "capire / risolvere",
+    "example": "I can’t figure out this problem.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 26,
+    "verb": "find out",
+    "meaning": "scoprire",
+    "example": "She found out the truth.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 27,
+    "verb": "focus on",
+    "meaning": "concentrarsi su",
+    "example": "The article focuses on education.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 28,
+    "verb": "get across",
+    "meaning": "comunicare / far capire",
+    "example": "The teacher got his point across.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 29,
+    "verb": "get along",
+    "meaning": "andare d’accordo",
+    "example": "They get along very well.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 30,
+    "verb": "get back",
+    "meaning": "tornare / recuperare",
+    "example": "I’ll get back to you soon.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 31,
+    "verb": "get by",
+    "meaning": "cavarsela",
+    "example": "She gets by with little money.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 32,
+    "verb": "get off",
+    "meaning": "scendere / uscire",
+    "example": "She got off the bus.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 33,
+    "verb": "get on",
+    "meaning": "salire / andare d’accordo",
+    "example": "He got on the train.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 34,
+    "verb": "get over",
+    "meaning": "superare / riprendersi",
+    "example": "He got over the illness.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 35,
+    "verb": "get through",
+    "meaning": "superare / contattare",
+    "example": "We got through the crisis.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 36,
+    "verb": "give up",
+    "meaning": "smettere / arrendersi",
+    "example": "He gave up smoking.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 37,
+    "verb": "go ahead",
+    "meaning": "procedere",
+    "example": "The project will go ahead.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 38,
+    "verb": "go on",
+    "meaning": "continuare",
+    "example": "The meeting went on for hours.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 39,
+    "verb": "go out",
+    "meaning": "uscire",
+    "example": "She went out with friends.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 40,
+    "verb": "go through",
+    "meaning": "attraversare / esaminare",
+    "example": "They went through the documents.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 41,
+    "verb": "grow up",
+    "meaning": "crescere",
+    "example": "He grew up in London.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 42,
+    "verb": "hold on",
+    "meaning": "attendere / resistere",
+    "example": "Hold on a minute!",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 43,
+    "verb": "hold up",
+    "meaning": "ritardare / rapinare",
+    "example": "Traffic held us up.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 44,
+    "verb": "keep on",
+    "meaning": "continuare a fare",
+    "example": "She kept on talking.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 45,
+    "verb": "keep up",
+    "meaning": "tenere il passo",
+    "example": "He kept up with the news.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 46,
+    "verb": "kick off",
+    "meaning": "iniziare",
+    "example": "The game kicked off at 7.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 47,
+    "verb": "lay off",
+    "meaning": "licenziare",
+    "example": "The company laid off 200 workers.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 48,
+    "verb": "lead to",
+    "meaning": "portare a / causare",
+    "example": "The crisis led to protests.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 49,
+    "verb": "look after",
+    "meaning": "prendersi cura di",
+    "example": "She looks after the children.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 50,
+    "verb": "look at",
+    "meaning": "guardare",
+    "example": "Look at this picture.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 51,
+    "verb": "look for",
+    "meaning": "cercare",
+    "example": "He’s looking for a job.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 52,
+    "verb": "look forward to",
+    "meaning": "non vedere l’ora di",
+    "example": "I look forward to meeting you.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 53,
+    "verb": "look into",
+    "meaning": "indagare",
+    "example": "They are looking into the case.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 54,
+    "verb": "look up",
+    "meaning": "cercare / migliorare",
+    "example": "She looked up the word.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 55,
+    "verb": "make out",
+    "meaning": "capire / baciarsi",
+    "example": "I can’t make out his handwriting.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 56,
+    "verb": "make up",
+    "meaning": "inventare / truccarsi / fare pace",
+    "example": "She made up a story.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 57,
+    "verb": "move on",
+    "meaning": "andare avanti",
+    "example": "Let’s move on to the next topic.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 58,
+    "verb": "pick up",
+    "meaning": "raccogliere / imparare",
+    "example": "He picked up Spanish quickly.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 59,
+    "verb": "point out",
+    "meaning": "indicare / far notare",
+    "example": "He pointed out the mistake.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 60,
+    "verb": "put off",
+    "meaning": "rimandare / scoraggiare",
+    "example": "They put off the meeting.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 61,
+    "verb": "put on",
+    "meaning": "indossare / mettere su",
+    "example": "She put on her coat.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 62,
+    "verb": "put out",
+    "meaning": "spegnere / disturbare",
+    "example": "The firefighters put out the fire.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 63,
+    "verb": "rely on",
+    "meaning": "fare affidamento su",
+    "example": "He relies on his team.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 64,
+    "verb": "run into",
+    "meaning": "incontrare per caso",
+    "example": "I ran into an old friend.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 65,
+    "verb": "run out",
+    "meaning": "esaurirsi",
+    "example": "We ran out of milk.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 66,
+    "verb": "set up",
+    "meaning": "fondare / organizzare",
+    "example": "They set up a new company.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 67,
+    "verb": "show up",
+    "meaning": "presentarsi",
+    "example": "She didn’t show up for the meeting.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 68,
+    "verb": "shut down",
+    "meaning": "chiudere",
+    "example": "The factory shut down last year.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 69,
+    "verb": "sign up",
+    "meaning": "iscriversi",
+    "example": "He signed up for the course.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 70,
+    "verb": "sort out",
+    "meaning": "risolvere / sistemare",
+    "example": "They sorted out the problem.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 71,
+    "verb": "speak up",
+    "meaning": "parlare più forte",
+    "example": "Please speak up, we can’t hear you.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 72,
+    "verb": "stand by",
+    "meaning": "sostenere / restare pronti",
+    "example": "We stand by our decision.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 73,
+    "verb": "stand out",
+    "meaning": "spiccare / distinguersi",
+    "example": "Her dress stands out in the crowd.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 74,
+    "verb": "stand up",
+    "meaning": "alzarsi / difendere",
+    "example": "She stood up for her rights.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 75,
+    "verb": "stick to",
+    "meaning": "attenersi a",
+    "example": "We must stick to the plan.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 76,
+    "verb": "take after",
+    "meaning": "assomigliare a",
+    "example": "He takes after his father.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 77,
+    "verb": "take away",
+    "meaning": "portare via",
+    "example": "The police took away the suspect.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 78,
+    "verb": "take back",
+    "meaning": "ritirare / riprendersi",
+    "example": "I take back what I said.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 79,
+    "verb": "take off",
+    "meaning": "decollare / togliersi",
+    "example": "The plane took off at 8.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 80,
+    "verb": "take on",
+    "meaning": "assumere / affrontare",
+    "example": "The company is taking on new staff.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 81,
+    "verb": "take over",
+    "meaning": "prendere il controllo",
+    "example": "A new manager took over.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 82,
+    "verb": "take part",
+    "meaning": "partecipare",
+    "example": "She took part in the competition.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 83,
+    "verb": "take up",
+    "meaning": "iniziare / occupare",
+    "example": "She took up painting.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 84,
+    "verb": "think of",
+    "meaning": "pensare a",
+    "example": "What do you think of this idea?",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 85,
+    "verb": "think over",
+    "meaning": "riflettere su",
+    "example": "Think over my proposal.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 86,
+    "verb": "throw away",
+    "meaning": "buttare via",
+    "example": "Don’t throw away your notes.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 87,
+    "verb": "throw out",
+    "meaning": "buttare fuori",
+    "example": "He was thrown out of the club.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 88,
+    "verb": "turn down",
+    "meaning": "rifiutare / abbassare",
+    "example": "She turned down the offer.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 89,
+    "verb": "turn off",
+    "meaning": "spegnere",
+    "example": "She turned off the light.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 90,
+    "verb": "turn on",
+    "meaning": "accendere",
+    "example": "She turned on the TV.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 91,
+    "verb": "turn out",
+    "meaning": "risultare",
+    "example": "It turned out to be true.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 92,
+    "verb": "turn up",
+    "meaning": "arrivare / alzare",
+    "example": "She turned up late.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 93,
+    "verb": "work out",
+    "meaning": "allenarsi / risolvere",
+    "example": "Everything worked out well.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 94,
+    "verb": "write down",
+    "meaning": "scrivere",
+    "example": "Write down the address.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 95,
+    "verb": "break into",
+    "meaning": "irrompere / iniziare improvvisamente",
+    "example": "Thieves broke into the house.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 96,
+    "verb": "call on",
+    "meaning": "visitare / fare appello",
+    "example": "The teacher called on me to answer.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 97,
+    "verb": "cut down",
+    "meaning": "ridurre",
+    "example": "We must cut down expenses.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 98,
+    "verb": "give in",
+    "meaning": "cedere",
+    "example": "She finally gave in to the pressure.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 99,
+    "verb": "set off",
+    "meaning": "partire / innescare",
+    "example": "They set off early in the morning.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 100,
+    "verb": "break through",
+    "meaning": "sfondare",
+    "example": "They broke through the barriers.",
+    "pron": "",
+    "box": 1,
+    "source": "PDF"
+  },
+  {
+    "id": 101,
+    "verb": "break off",
+    "meaning": "interrompere (relazioni, trattative)",
+    "example": "They broke off negotiations after the scandal.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 102,
+    "verb": "bring in",
+    "meaning": "introdurre (leggi, regole, soldi)",
+    "example": "The new policy will bring in more taxes.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 103,
+    "verb": "carry off",
+    "meaning": "portare a termine con successo",
+    "example": "She carried off the presentation very well.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 104,
+    "verb": "check in",
+    "meaning": "registrarsi (in hotel, aeroporto)",
+    "example": "We checked in at the airport two hours early.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 105,
+    "verb": "check up on",
+    "meaning": "controllare, verificare",
+    "example": "The teacher checked up on the students’ homework.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 106,
+    "verb": "come down with",
+    "meaning": "ammalarsi di",
+    "example": "He came down with the flu.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 107,
+    "verb": "cut out",
+    "meaning": "smettere di, eliminare",
+    "example": "You should cut out sugar from your diet.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 108,
+    "verb": "fall apart",
+    "meaning": "crollare, andare in pezzi",
+    "example": "The old book fell apart in my hands.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 109,
+    "verb": "fall back on",
+    "meaning": "contare su qualcosa come risorsa",
+    "example": "She had to fall back on her savings.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 110,
+    "verb": "fall for",
+    "meaning": "innamorarsi di / credere a una bugia",
+    "example": "He fell for her instantly.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 111,
+    "verb": "get away with",
+    "meaning": "farla franca",
+    "example": "He got away with cheating on the exam.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 112,
+    "verb": "give away",
+    "meaning": "regalare / rivelare",
+    "example": "They gave away free samples.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 113,
+    "verb": "hand in",
+    "meaning": "consegnare (compiti, dimissioni)",
+    "example": "She handed in her resignation.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 114,
+    "verb": "hand out",
+    "meaning": "distribuire",
+    "example": "The teacher handed out the exam papers.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 115,
+    "verb": "hold back",
+    "meaning": "trattenere / frenare",
+    "example": "Tears held her back from speaking.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 116,
+    "verb": "let down",
+    "meaning": "deludere",
+    "example": "I won’t let you down this time.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 117,
+    "verb": "let in",
+    "meaning": "far entrare",
+    "example": "She opened the door to let him in.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 118,
+    "verb": "look back on",
+    "meaning": "ripensare a, ricordare",
+    "example": "He looked back on his childhood with nostalgia.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 119,
+    "verb": "pass away",
+    "meaning": "morire",
+    "example": "Her grandfather passed away last year.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 120,
+    "verb": "pass out",
+    "meaning": "svenire",
+    "example": "He passed out from exhaustion.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 121,
+    "verb": "pull over",
+    "meaning": "accostare (con un veicolo)",
+    "example": "The police asked him to pull over.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 122,
+    "verb": "put up with",
+    "meaning": "sopportare",
+    "example": "I can’t put up with this noise any longer.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 123,
+    "verb": "run over",
+    "meaning": "investire / ripassare",
+    "example": "The car ran over a cat.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 124,
+    "verb": "set aside",
+    "meaning": "mettere da parte",
+    "example": "She set aside some money for the trip.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 125,
+    "verb": "show off",
+    "meaning": "mettersi in mostra",
+    "example": "He loves to show off his new car.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 126,
+    "verb": "step down",
+    "meaning": "dimettersi",
+    "example": "The CEO stepped down after ten years.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 127,
+    "verb": "stick with",
+    "meaning": "continuare con / restare fedele a",
+    "example": "If you stick with this plan, you’ll succeed.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 128,
+    "verb": "turn against",
+    "meaning": "rivoltarsi contro",
+    "example": "The public turned against the politician.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 129,
+    "verb": "warm up",
+    "meaning": "riscaldarsi",
+    "example": "The team warmed up before the match.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  },
+  {
+    "id": 130,
+    "verb": "wind up",
+    "meaning": "concludere / finire in",
+    "example": "Let’s wind up the meeting.",
+    "pron": "",
+    "box": 1,
+    "source": "Extra"
+  }
+]

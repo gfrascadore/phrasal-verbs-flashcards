@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Phrasal Verbs Flashcards</title>
+  <!-- React and ReactDOM from CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!-- Babel for JSX transpilation in the browser -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- TailwindCSS for quick styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <div id="root"></div>
+  <script type="text/babel">
+    // URL of the preloaded JSON dataset. When the app first loads and no
+    // flashcards are stored in localStorage, this file is fetched to
+    // populate the initial set of 100 verbs (from the PDF) plus the 30
+    // extra verbs provided in the conversation.
+    const PRELOADED_URL = 'pv_preloaded.json';
+
+    /**
+     * Fetch the preloaded dataset from the JSON file.
+     * Returns a promise that resolves with an array of flashcards.
+     */
+    async function fetchPreloaded() {
+      const res = await fetch(PRELOADED_URL);
+      return await res.json();
+    }
+
+    /**
+     * Main application component. Implements a simple Leitner method flashcard
+     * system with search and filtering. Cards are persisted in localStorage
+     * under the key `pv_flashcards`. When the app first loads, it attempts
+     * to restore the cards from localStorage. If none exist it fetches the
+     * preloaded dataset from the JSON file and stores it.
+     */
+    function App() {
+      const [cards, setCards] = React.useState([]);
+      const [search, setSearch] = React.useState('');
+      const [sourceFilter, setSourceFilter] = React.useState('All');
+      const [boxFilter, setBoxFilter] = React.useState('All');
+      const [flipped, setFlipped] = React.useState({});
+      const [loading, setLoading] = React.useState(true);
+      const [newVerb, setNewVerb] = React.useState('');
+      const [newMeaning, setNewMeaning] = React.useState('');
+      const [newExample, setNewExample] = React.useState('');
+      const [newPron, setNewPron] = React.useState('');
+      const [error, setError] = React.useState('');
+
+      // On mount, load cards from localStorage or from the preloaded dataset.
+      React.useEffect(() => {
+        const stored = localStorage.getItem('pv_flashcards');
+        if (stored) {
+          try {
+            setCards(JSON.parse(stored));
+            setLoading(false);
+          } catch (err) {
+            console.error('Error parsing stored flashcards', err);
+            localStorage.removeItem('pv_flashcards');
+          }
+        }
+        if (stored === null) {
+          fetchPreloaded().then(data => {
+            setCards(data);
+            localStorage.setItem('pv_flashcards', JSON.stringify(data));
+            setLoading(false);
+          });
+        }
+      }, []);
+
+      // Helper to persist cards to localStorage whenever they change.
+      const updateCards = (newCards) => {
+        setCards(newCards);
+        localStorage.setItem('pv_flashcards', JSON.stringify(newCards));
+      };
+
+      // Filtered list based on search, source, and box.
+      const filtered = cards.filter(card => {
+        if (sourceFilter !== 'All' && card.source !== sourceFilter) return false;
+        if (boxFilter !== 'All' && card.box !== Number(boxFilter)) return false;
+        const q = search.toLowerCase();
+        if (q) {
+          const hay = (card.verb + ' ' + card.meaning + ' ' + card.example).toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      // Toggle the flipped state of a card by ID.
+      const toggleFlip = (id) => {
+        setFlipped(prev => ({ ...prev, [id]: !prev[id] }));
+      };
+
+      // Change the box of a card by a delta (-1 or +1). Clamped to [1,5].
+      const changeBox = (id, delta) => {
+        updateCards(cards.map(card => {
+          if (card.id === id) {
+            const newBox = Math.min(5, Math.max(1, card.box + delta));
+            return { ...card, box: newBox };
+          }
+          return card;
+        }));
+      };
+
+      // Reload only the 100 cards from the PDF (source === 'PDF'). Clears
+      // existing cards and resets to the preloaded dataset.
+      const reloadPreloaded = () => {
+        fetchPreloaded().then(data => {
+          updateCards(data);
+        });
+      };
+
+      // Add the 30 extra cards (source === 'Extra') if they are not already
+      // present in the cards array.
+      const addExtras = () => {
+        fetchPreloaded().then(data => {
+          const extras = data.filter(card => card.source === 'Extra');
+          const existingIds = new Set(cards.map(c => c.id));
+          const merged = cards.concat(extras.filter(c => !existingIds.has(c.id)));
+          updateCards(merged);
+        });
+      };
+
+      // Import cards from a JSON file selected by the user. If the file
+      // contains a valid array of card objects, it replaces the current set.
+      const handleImport = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (evt) => {
+          try {
+            const imported = JSON.parse(evt.target.result);
+            if (Array.isArray(imported)) {
+              updateCards(imported);
+              setError('');
+            } else {
+              setError('Il file JSON non contiene un array.');
+            }
+          } catch (err) {
+            setError('Errore nel parsing del file JSON.');
+          }
+        };
+        reader.readAsText(file);
+      };
+
+      // Export current cards to a JSON file. Creates a blob and triggers
+      // download.
+      const handleExport = () => {
+        const blob = new Blob([JSON.stringify(cards, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'pv_flashcards_export.json';
+        a.click();
+        URL.revokeObjectURL(url);
+      };
+
+      // Add a new card manually with user-provided fields. Requires verb and
+      // meaning. The new card gets a unique ID and is placed in box 1.
+      const handleAddCard = () => {
+        if (!newVerb.trim() || !newMeaning.trim()) {
+          setError('Inserisci almeno verbo e significato.');
+          return;
+        }
+        const newId = cards.length ? Math.max(...cards.map(c => c.id)) + 1 : 1;
+        const newCard = {
+          id: newId,
+          verb: newVerb.trim(),
+          meaning: newMeaning.trim(),
+          example: newExample.trim(),
+          pron: newPron.trim(),
+          box: 1,
+          source: 'Manual'
+        };
+        updateCards([...cards, newCard]);
+        setNewVerb('');
+        setNewMeaning('');
+        setNewExample('');
+        setNewPron('');
+        setError('');
+      };
+
+      // Distinct sources available for filtering.
+      const sources = Array.from(new Set(cards.map(c => c.source)));
+
+      return (
+        <div className="p-4 max-w-5xl mx-auto">
+          <h1 className="text-3xl font-bold mb-4">Phrasal Verbs Flashcards</h1>
+          {loading ? (
+            <p>Caricamento...</p>
+          ) : (
+            <>
+              {/* Controls section */}
+              <div className="flex flex-wrap gap-4 mb-4">
+                <input
+                  type="text"
+                  placeholder="Cerca..."
+                  value={search}
+                  onChange={e => setSearch(e.target.value)}
+                  className="border p-2 flex-grow"
+                />
+                <select value={sourceFilter} onChange={e => setSourceFilter(e.target.value)} className="border p-2">
+                  <option value="All">Tutte le fonti</option>
+                  {sources.map(src => (
+                    <option key={src} value={src}>{src}</option>
+                  ))}
+                </select>
+                <select value={boxFilter} onChange={e => setBoxFilter(e.target.value)} className="border p-2">
+                  <option value="All">Tutte le scatole</option>
+                  {[1, 2, 3, 4, 5].map(n => (
+                    <option key={n} value={n}>Scatola {n}</option>
+                  ))}
+                </select>
+                <button onClick={reloadPreloaded} className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded">
+                  Ricarica i 100 dal PDF
+                </button>
+                <button onClick={addExtras} className="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded">
+                  + Aggiungi i 30 Extra
+                </button>
+                <button onClick={handleExport} className="bg-purple-500 hover:bg-purple-600 text-white px-3 py-2 rounded">
+                  Esporta JSON
+                </button>
+                <label className="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-2 rounded cursor-pointer">
+                  Importa JSON
+                  <input type="file" accept="application/json" onChange={handleImport} className="hidden" />
+                </label>
+              </div>
+              {error && <p className="text-red-600 mb-2">{error}</p>}
+              {/* Manual add card form */}
+              <div className="mb-4 border p-4 rounded bg-white shadow">
+                <h2 className="text-xl font-semibold mb-2">Aggiungi Flashcard Manualmente</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                  <input
+                    type="text"
+                    placeholder="Verbo"
+                    value={newVerb}
+                    onChange={e => setNewVerb(e.target.value)}
+                    className="border p-2"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Significato"
+                    value={newMeaning}
+                    onChange={e => setNewMeaning(e.target.value)}
+                    className="border p-2"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Esempio (facoltativo)"
+                    value={newExample}
+                    onChange={e => setNewExample(e.target.value)}
+                    className="border p-2"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Assonanza (facoltativa)"
+                    value={newPron}
+                    onChange={e => setNewPron(e.target.value)}
+                    className="border p-2"
+                  />
+                </div>
+                <button onClick={handleAddCard} className="mt-2 bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded">
+                  Aggiungi
+                </button>
+              </div>
+              {/* Summary and card grid */}
+              <p className="mb-2">Mostrando {filtered.length} di {cards.length} flashcards</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                {filtered.map(card => (
+                  <div
+                    key={card.id}
+                    className="border rounded p-4 bg-white shadow cursor-pointer"
+                    onClick={() => toggleFlip(card.id)}
+                  >
+                    {!flipped[card.id] ? (
+                      <div>
+                        <p className="text-xl font-semibold mb-2">{card.verb}</p>
+                        <p className="text-sm text-gray-600">Scatola {card.box} • Fonte: {card.source}</p>
+                      </div>
+                    ) : (
+                      <div>
+                        <p className="font-semibold">{card.meaning}</p>
+                        {card.example && <p className="mt-1 text-sm italic">Esempio: {card.example}</p>}
+                        {card.pron && <p className="mt-1 text-sm">Assonanza: {card.pron}</p>}
+                        <div className="mt-2 flex gap-2">
+                          <button
+                            onClick={(e) => { e.stopPropagation(); changeBox(card.id, -1); }}
+                            className="bg-gray-200 hover:bg-gray-300 px-2 py-1 rounded"
+                          >
+                            &lt;
+                          </button>
+                          <button
+                            onClick={(e) => { e.stopPropagation(); changeBox(card.id, 1); }}
+                            className="bg-gray-200 hover:bg-gray-300 px-2 py-1 rounded"
+                          >
+                            &gt;
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>
